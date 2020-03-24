@@ -4,13 +4,13 @@ require 'vendor/autoload.php';
 
 use Bitly\BitlyClient;
 
-$employeeEmail = "mgilligan@scileads.com";
-$employeeName = "Matthew";
+$employeeEmail = "xxxxxx@xxx.com";
+$employeeName = "xxxxxx";
 
 function shortenUrl($email) {
         $md5hash = md5($email);
 
-        $bitlyClient = new BitlyClient('8e3c295a7fab810c2c29784ab14f616873a4a8e5');
+        $bitlyClient = new BitlyClient('xxxAPI KEYxxx');
 
         $options = [
                 'longUrl' => 'http://sclieads.xyz/{$md5hash}',
@@ -32,7 +32,7 @@ function sendEmail($to, $name, $url){
                         \r\nClick this link if that's something you might be interested: $url
                         \r\nThanks
                         \r\nJames";
-        $headers = "From: James Campbell <james@scileads.com>";
+        $headers = "From: xxxxxx xxxxxx <xxxxxx@xxx.com>";
 
         mail($to, $subject, $message, $headers);
 };
@@ -45,6 +45,6 @@ function sendEmail($to, $name, $url){
 
 sendEmail($employeeEmail, $employeeName, $urlToSend);
 
-echo "sent! finally";
+echo "sent!";
 
 ?>
