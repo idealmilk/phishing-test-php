@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body bgcolor="######">
+    <div class="bgimg">
+      <div class="middle">
+        <h1 class="glow">GHOST SQUAD HACKERS</h1>
+        <img src="mask.png" alt="Smiley face" height="120">
+        <hr>
+        <p class="glow">.::Hacked by::.</p>
+        <p class="glow smaller">Code Avenger</p>
+        <p class="glow smaller">Queen Destroyer</p>
+        <p class="glow smaller">General Virus</p>
+        <p class="glow even smaller">Your Company's Security Has Been Compromised By #GhostSquadHackers</p>
+        <p class="glow evensmaller">ALL YOUR DATA BELONGS TO US NOW</p>
+        <p class="glow evensmaller">SECURITY IS JUST AN ILLUSION</p>
+      </div>
+
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      color: black;
+    }
+
+    body, html {
+      height: 100%
+    }
+
+    .bgimg {
+      background-image: url('portalbackground.jpg');
+      opacity: 80%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      font-size: 40px;
+    }
+
+    .smaller {
+      font-size: 25px;
+      color: #707070;
+    }
+
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    hr {
+      margin: auto;
+      width: 50%;
+    }
+
+    .glow {
+      color: #fff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #53ff43, 0 0 40px #53ff43, 0 0 50px #53ff43, 0 0 60px #53ff43, 0 0 70px #53ff43;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green, 0 0 80px green;
+      }
+    }
+  </style>
+</html>
